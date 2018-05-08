@@ -23,8 +23,8 @@ class TicTacToe
   end
 
   def input_to_index(input)
-    user_input = gets.to_i
-    index_of_user = user_input - 1
+    user_input = gets
+    index_of_user = user_input.to_i - 1
     return index_of_user
   end
 end
