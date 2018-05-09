@@ -149,4 +149,12 @@ class TicTacToe
     end
   end
 
+  def over?
+    if won?(board) || draw?(board)
+      return true
+    else
+      return false
+    end
+  end
+
 end
