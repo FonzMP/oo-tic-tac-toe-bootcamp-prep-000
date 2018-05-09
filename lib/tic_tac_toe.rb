@@ -169,7 +169,7 @@ class TicTacToe
   end
 
   def play
-    until over?(board) || full?(board)
+    until over? || full?(board)
       turn(board)
     end
 
