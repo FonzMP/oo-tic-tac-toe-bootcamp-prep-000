@@ -28,6 +28,6 @@ class TicTacToe
     return index_of_user
   end
 
-  def move(input)
-  
+  def move(board, index, var)
+
 end
