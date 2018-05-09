@@ -25,7 +25,6 @@ class TicTacToe
   def input_to_index(input)
     user_index = input.to_i
     index_of_user = user_index - 1
-    @index = index_of_user
   end
 
   def move(index, var)
