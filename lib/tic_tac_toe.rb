@@ -23,6 +23,7 @@ class TicTacToe
   end
 
   def input_to_index(input)
+    puts "Please select 1-9: "
     user_input = gets
     index_of_user = user_input - 1
     return index_of_user
