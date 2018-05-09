@@ -31,7 +31,7 @@ class TicTacToe
     @board[index] = var.to_s
   end
 
-  def position_taken?( index)
+  def position_taken?(index)
     if @board[index] == " " || @board[index] == ""
       return false
     elsif @board[index] == nil
@@ -73,18 +73,18 @@ class TicTacToe
     puts "Please enter 1-9:"
     user_input = gets.to_i
     user_index = input_to_index(user_input)
-    if user_index.between?(0, 8)
-      if valid_move?(@board, user_index)
-        @board[user_index] = current_player(@board)
-        display_board(@board)
-      else
-        puts "Sorry, that spot is taken!"
-        turn(@board)
-      end
-    else
-      puts "That is not a valid choice. Please try again:"
-      turn(@board)
-    end
+    # if user_index.between?(0, 8)
+    #   if valid_move?(@board, user_index)
+    #     @board[user_index] = current_player(@board)
+    #     display_board(@board)
+    #   else
+    #     puts "Sorry, that spot is taken!"
+    #     turn(@board)
+    #   end
+    # else
+    #   puts "That is not a valid choice. Please try again:"
+    #   turn(@board)
+    # end
   end
 
   def valid_move?(index)
