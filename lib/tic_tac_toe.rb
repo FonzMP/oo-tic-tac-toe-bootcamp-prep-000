@@ -159,7 +159,7 @@ class TicTacToe
 
   def winner
     if won?
-      board_index = won?
+      board_index = won?[0]
       if @board[board_index] == "X"
         return "X"
       else
