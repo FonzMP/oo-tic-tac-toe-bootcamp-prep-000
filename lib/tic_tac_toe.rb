@@ -83,7 +83,7 @@ class TicTacToe
       end
     else
       puts "That is not a valid choice. Please try again:"
-      turn(@board)
+      turn
     end
   end
 
