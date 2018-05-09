@@ -77,9 +77,9 @@ class TicTacToe
       if valid_move?(user_index)
         @board[user_index] = current_player
         display_board
-    #   else
-    #     puts "Sorry, that spot is taken!"
-    #     turn(@board)
+      else
+        puts "Sorry, that spot is taken!"
+        turn(@board)
       end
     # else
     #   puts "That is not a valid choice. Please try again:"
