@@ -175,7 +175,7 @@ class TicTacToe
 
     if winner == "X"
       puts "Congratulations X!"
-    elsif winner(board) == "O"
+    elsif winner == "O"
       puts "Congratulations O!"
     else
       puts "Cat's Game!"
