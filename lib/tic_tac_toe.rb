@@ -74,7 +74,7 @@ class TicTacToe
     user_input = gets.to_i
     user_index = input_to_index(user_input)
     if user_index.between?(0, 8)
-      if valid_move?(@board, user_index)
+      if valid_move?(user_index)
         @board[user_index] = current_player(@board)
         display_board(@board)
     #   else
