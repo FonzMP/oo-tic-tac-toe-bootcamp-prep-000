@@ -28,6 +28,7 @@ class TicTacToe
   end
 
   def move(board, index, var)
+    @board = board
     board[index] = var.to_s
   end
 
