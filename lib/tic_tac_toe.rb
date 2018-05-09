@@ -75,7 +75,7 @@ class TicTacToe
     user_index = input_to_index(user_input)
     if user_index.between?(0, 8)
       if valid_move?(user_index)
-        @board[user_index] = current_player(@board)
+        @board[user_index] = current_player
         display_board(@board)
     #   else
     #     puts "Sorry, that spot is taken!"
