@@ -79,7 +79,7 @@ class TicTacToe
         display_board
       else
         puts "Sorry, that spot is taken!"
-        turn(@board)
+        turn
       end
     else
       puts "That is not a valid choice. Please try again:"
