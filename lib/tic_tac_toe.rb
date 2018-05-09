@@ -28,7 +28,7 @@ class TicTacToe
     return index_of_user
   end
 
-  def move(board, index, var)
+  def move(@board, index, var)
     board[index] = var.to_s
   end
 
