@@ -157,4 +157,29 @@ class TicTacToe
     end
   end
 
+  def winner
+    if won?(board)
+      board_index = won?(board)[0]
+      if board[board_index] == "X"
+        return "X"
+      else
+        return "O"
+      end
+    end
+  end
+
+  def play(board)
+    until over?(board) || full?(board)
+      turn(board)
+    end
+
+    if winner(board) == "X"
+      puts "Congratulations X!"
+    elsif winner(board) == "O"
+      puts "Congratulations O!"
+    else
+      puts "Cat's Game!"
+    end
+  end
+
 end
