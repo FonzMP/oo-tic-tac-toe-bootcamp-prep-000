@@ -80,7 +80,7 @@ class TicTacToe
     #   else
     #     puts "Sorry, that spot is taken!"
     #     turn(@board)
-    #   end
+      end
     # else
     #   puts "That is not a valid choice. Please try again:"
     #   turn(@board)
