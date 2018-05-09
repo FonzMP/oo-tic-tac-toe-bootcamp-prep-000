@@ -31,10 +31,10 @@ class TicTacToe
     @board[index] = var.to_s
   end
 
-  def position_taken?(board, index)
-    if board[index] == " " || board[index] == ""
+  def position_taken?( index)
+    if @board[index] == " " || @board[index] == ""
       return false
-    elsif board[index] == nil
+    elsif @board[index] == nil
       return false
     else
       return true
