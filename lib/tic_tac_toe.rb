@@ -173,7 +173,7 @@ class TicTacToe
       turn
     end
 
-    if winner(board) == "X"
+    if winner == "X"
       puts "Congratulations X!"
     elsif winner(board) == "O"
       puts "Congratulations O!"
