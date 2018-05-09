@@ -29,5 +29,7 @@ class TicTacToe
   end
 
   def move(board, index, var)
+  board[index] = var.to_s
+end
 
 end
